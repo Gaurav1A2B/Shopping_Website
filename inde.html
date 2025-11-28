@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">MyShop</h1>
+    <button id="cartBtn" class="relative"> 🛒
+      <span id="cartCount" class="absolute -top-2 -right-3 bg-red-600 text-white text-xs px-2 rounded-full">0</span>
+    </button>
+  </nav>
+
+  <!-- FILTER SECTION -->
+  <div class="px-6 py-4">
+    <select id="categoryFilter" class="p-2 border rounded">
+      <option value="all">All Products</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothes">Clothes</option>
+      <option value="shoes">Shoes</option>
+    </select>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <div id="productList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 pb-10"></div>
+
+  <!-- JS FILES -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

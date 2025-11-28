@@ -1,0 +1,71 @@
+/* Smooth animations */
+* {
+  transition: 0.25s ease-in-out;
+}
+
+/* Body font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar styling */
+nav {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Hover effect for logo */
+nav h1:hover {
+  color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Product Cards */
+.product-card {
+  border-radius: 14px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image */
+.product-card img {
+  border-radius: 10px;
+}
+
+/* Add-to-cart button */
+.add-btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+.add-btn:hover {
+  background: #1e40af;
+  transform: scale(1.04);
+}
+
+/* Category filter */
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+select:hover {
+  border-color: #2563eb;
+}
+
+/* Cart count badge */
+#cartCount {
+  font-weight: bold;
+}
